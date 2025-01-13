@@ -3,7 +3,7 @@ import Navbar from "./Components/NabVar/Navbar"
 
 const MainLayOut = () => {
   return (
-    <div>
+    <div className="min-h-screen ">
         <Navbar/>
     </div>
   )
