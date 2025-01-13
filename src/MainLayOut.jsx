@@ -1,8 +1,11 @@
+import Navbar from "./Components/NabVar/Navbar"
 
 
 const MainLayOut = () => {
   return (
-    <div>MainLayOut</div>
+    <div>
+        <Navbar/>
+    </div>
   )
 }
 
