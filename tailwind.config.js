@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'underline-pulse': {
+          '0%, 100%': { textDecoration: 'underline' },
+          '50%': { textDecoration: 'none' },
+        },
+      },
+      animation: {
+        'underline-pulse': 'underline-pulse 4s infinite',
+      },
       backgroundImage: {
         'grid-pattern': `
           linear-gradient(to right, rgba(209, 213, 219, 0.2) 1px, transparent 1px),
