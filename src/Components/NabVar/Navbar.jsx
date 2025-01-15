@@ -63,31 +63,31 @@ const Navbar = () => {
           {/* Mobile Dropdown Menu */}
           <div className={`${isDropdownOpen ? 'opacity-100' : 'opacity-100'}`}>
             <ul 
-              className={`absolute left-0 w-full bg-blue-500 text-center text-black mt-10 z-10 
+              className={`absolute left-0 w-full bg-[#E9EFFE] text-center py-2 text-black mt-10 z-10 
                           transform transition-all duration-300 ease-in-out opacity-0 
                           ${isDropdownOpen ? 'translate-y-0 opacity-100' : 'translate-y-[-20px]'}`}
             >
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Portfolio</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Process</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Testimonials</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Pricing</li>
-              <li className="text-lg font-semibold flex justify-center">
+              <li className="px-4 py-2 text-[17px] font-semibold hover:bg-gray-100 cursor-pointer">Portfolio</li>
+              <li className="px-4 py-2 text-[17px] font-semibold hover:bg-gray-100 cursor-pointer">Process</li>
+              <li className="px-4 py-2 text-[17px] font-semibold hover:bg-gray-100 cursor-pointer">Testimonials</li>
+              <li className="px-4 py-2 text-[17px] font-semibold hover:bg-gray-100 cursor-pointer">Pricing</li>
+              <li className="font-semibold flex justify-center">
                 <button 
                   className="flex items-center space-x-2"
                   onClick={() => setSelectLen(!selectLen)}
                 >
-                  <div className='flex gap-3'>
-                    <span>Eng</span>
-                    <FaAngleDown />
-                  </div>
+                   <div className='flex gap-3 items-center'>
+                  <span>Eng</span>
+                  {selectLen ? <FaAngleUp /> : <FaAngleDown />}
+                </div>
                 </button>
 
                 {/* Language Dropdown menu */}
                 <ul 
-                  className={`absolute left-30 mt-6 w-40 bg-white shadow-lg rounded-md text-black 
+                  className={`absolute left-30 mt-10 w-40 bg-white shadow-lg rounded-md text-black 
                               transform transition-all duration-300 ease-in-out ${selectLen ? 'translate-y-0 opacity-100' : 'translate-y-[-20px] opacity-0 hidden'}`}
                 >
-                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">frn</li>
+                  <li className="px-4 py-2 bg-[#E9EFFE] cursor-pointer">frn</li>
                 </ul>
               </li>
             </ul>
