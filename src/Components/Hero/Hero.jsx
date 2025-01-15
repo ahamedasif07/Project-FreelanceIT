@@ -11,18 +11,19 @@ const Hero = () => {
     ]
   return (
    
-   <div className="bg-gradient-to-b from-white to-[#E9EFFE]">
+   <div className="bg-gradient-to-b from-white shadow-b-lg to-[#E9EFFE]">
     <div className="max-w-screen-lg mx-auto">
     <div className="flex justify-center">
-        <button className="px-[8px] text-[#006BFF] font-semibold text-[14px] mt-[81px] py-[3px] rounded-full  border-[1px] border-blue-500">Fast, but smart</button>
+        <button className="px-[8px]  text-[#006BFF] font-semibold text-[14px] mt-[81px] py-[3px] rounded-full  border-[1px] border-blue-500">Fast, but smart</button>
     </div>
     <div className="">
         <div className="mt-[40px]">
-            <h2 className="lg:text-[56px] lg:text-6xl text-4xl font-extrabold px-4 md:px-[46px] text-center leading-snug">
+            <h2 className="lg:text-[56px] text-wrap lg:text-6xl text-4xl font-extrabold px-4 md:px-[46px] text-center leading-snug">
                 Optimizing your brand image has become
-                <span className="lg:text-[56px] text-4xl font-bold ml-[10px] md:ml-[30px] text-[#006BFF] animate-underline-pulse duration-2000">
+                {/* <span className="lg:text-[56px] text-4xl font-bold ml-[10px] md:ml-[30px] text-[#006BFF] animate-underline-pulse duration-2000">
                     essential!
-                </span>
+                </span> */}
+                <span className="text-blue-600"> essential!</span>
             </h2>
             <h2 className="text-center px-5 mt-[40px] max-w-[600px] mx-auto font-semibold">
                 We create customized logos with minimalist, timeless designs for Solopreneurs, Startups, SaaS, and SMEs.
