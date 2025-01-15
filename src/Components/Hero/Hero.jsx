@@ -34,7 +34,7 @@ for Solopreneurs, Startups, SaaS and SMEs.
   <span><IoMdArrowRoundForward/></span>
 </button>
 
-<button className="text-[#006BFF] bg-white px-3 py-2 border border-blue-500 hover:text-white  hover:bg-[#006BFF] text-[14px] rounded-lg transition-all duration-300">
+<button className="text-[#006BFF] bg-white px-4 py-2 border border-blue-500 hover:text-white  hover:bg-[#006BFF] text-[14px] rounded-lg transition-all duration-300">
   See Our Offer 
 </button>
 
