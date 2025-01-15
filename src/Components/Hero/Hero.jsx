@@ -1,5 +1,7 @@
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
+import CustomerTrust from "../SarvicesCompany/CustomerTrust";
+
 const Hero = () => {
     const ourSarviceList = [
         {title : 'Specializing in timeless, minimalist customization'},
@@ -26,7 +28,7 @@ We create customized logos with minimalist, timeless designs
 for Solopreneurs, Startups, SaaS and SMEs.
        </h2>
 
-       <div className="flex gap-3 items-center justify-center mt-5">
+       <div className="flex md:flex-row flex-col gap-3 items-center justify-center mt-5">
        <button className="bg-[#006BFF] text-white px-4 py-2 text-[14px] rounded-lg flex items-center gap-1 hover:scale-105 hover:shadow-lg transition-all duration-300">
   See Our Offer 
   <span><IoMdArrowRoundForward/></span>
@@ -40,7 +42,7 @@ for Solopreneurs, Startups, SaaS and SMEs.
 
 
        {/* out sarvices titels */}
-       <div className="mt-5 flex gap-3 px-[40px] flex-wrap mx-auto justify-center">
+       <div className="mt-5 md:mt-[50px] flex gap-3 px-4 md:px-[40px] flex-wrap mx-auto justify-center">
         {ourSarviceList.map(sarvice => <div key={sarvice} className=" text-center">
             <div>
             <h2 className="flex items-center gap-3"><span className="text-[#006BFF]"><IoCheckmarkDoneCircleSharp/></span>{sarvice.title}</h2>
@@ -52,6 +54,10 @@ for Solopreneurs, Startups, SaaS and SMEs.
           </div>
             
         </div>
+
+        {/* marque tags sections  starts */}
+      <CustomerTrust/>
+        {/* marque tags sections  starts */}
     </div>
   )
 }
