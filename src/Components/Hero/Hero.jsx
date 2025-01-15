@@ -1,5 +1,12 @@
 import { IoMdArrowRoundForward } from "react-icons/io";
+import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 const Hero = () => {
+    const ourSarviceList = [
+        {title : 'Specializing in timeless, minimalist customization'},
+        {title : 'Designed by real experts, not AI'},
+        {title : '100% automated process'},
+        {title : 'Delivered in 5 days'},
+    ]
   return (
     <div className="max-w-screen-lg mx-auto">
         <div className="flex justify-center">
@@ -7,9 +14,9 @@ const Hero = () => {
         </div>
         <div>
           <div className="mt-[40px]">
-          <h2 className="text-[56px] font-extrabold px-[56px] text-center leading-snug">
+          <h2 className="lg:text-[56px]  lg:text-6xl text-4xl  font-extrabold px-4 md:px-[46px] text-center leading-snug">
       Optimizing your brand image has become
-      <span className="text-6xl font-bold ml-[30px] text-[#006BFF] animate-underline-pulse duration-2000">
+      <span className="lg:text-[56px] text-4xl  font-bold ml-[10px] md:ml-[30px] text-[#006BFF] animate-underline-pulse duration-2000">
   essential!
 </span>
        </h2>
@@ -20,15 +27,25 @@ for Solopreneurs, Startups, SaaS and SMEs.
        </h2>
 
        <div className="flex gap-3 items-center justify-center mt-5">
-       <button className="bg-[#006BFF] text-white px-3 py-2 text-[14px] rounded-lg flex items-center gap-1 hover:scale-105 hover:shadow-lg transition-all duration-300">
+       <button className="bg-[#006BFF] text-white px-4 py-2 text-[14px] rounded-lg flex items-center gap-1 hover:scale-105 hover:shadow-lg transition-all duration-300">
   See Our Offer 
   <span><IoMdArrowRoundForward/></span>
 </button>
 
-<button className="text-[#006BFF] bg-white px-3 py-2 border border-blue-500 hover:text-white hover:bg-[#006BFF] text-[14px] rounded-lg transition-all duration-300">
+<button className="text-[#006BFF] bg-white px-3 py-2 border border-blue-500 hover:text-white  hover:bg-[#006BFF] text-[14px] rounded-lg transition-all duration-300">
   See Our Offer 
 </button>
 
+       </div>
+
+
+       {/* out sarvices titels */}
+       <div className="mt-5 flex gap-3 px-[40px] flex-wrap mx-auto justify-center">
+        {ourSarviceList.map(sarvice => <div key={sarvice} className=" text-center">
+            <div>
+            <h2 className="flex items-center gap-3"><span className="text-[#006BFF]"><IoCheckmarkDoneCircleSharp/></span>{sarvice.title}</h2>
+            </div>
+        </div> )}
        </div>
 
       
