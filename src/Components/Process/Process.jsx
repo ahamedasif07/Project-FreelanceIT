@@ -16,10 +16,11 @@ const Process = () => {
   return (
     <div className='max-w-screen-md px-4 mx-auto'>
           <div>
+            <div>
             <div className='flex justify-center'>
                 <button className="px-[8px] text-[#006BFF] font-semibold text-[14px] mt-[81px] py-[3px] rounded-full border-[1px] border-blue-500">
                   {/* Button content */}
-                  <h2 className='flex gap-2 items-center'> <span className=' text-[18px] font-semibold'><FaWandMagicSparkles/> </span> protfoliyo</h2>
+                  <h2 className='flex gap-2 items-center'> <span className=' text-[18px] font-semibold'><FaWandMagicSparkles/> </span> Process</h2>
                 </button>
               </div>
                <div>
@@ -31,6 +32,7 @@ We turn your ideas into a strong identity, effortlessly.
 
 .</p>
                </div>
+            </div>
                <div data-aos="fade-up">
                <img className='text-center border   mt-[30px] md:mt-[50px] mb-4 h-[300px]  md:h-[400px] w-full'
         src="https://wedooble.com/wp-content/uploads/2024/12/jhjh.svg" 
