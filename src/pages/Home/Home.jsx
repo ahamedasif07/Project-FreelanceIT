@@ -1,5 +1,6 @@
 
 import Hero from '../../Components/Hero/Hero'
+import Process from '../../Components/Process/Process'
 import Protfoliyo from '../../Components/Protfoliyo/Protfoliyo'
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
         <Hero></Hero>
         <Protfoliyo/>
+        <Process/>
     </div>
   )
 }

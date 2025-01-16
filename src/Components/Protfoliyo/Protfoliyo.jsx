@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CgProfile } from "react-icons/cg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -16,10 +18,18 @@ const protfoliyo = () => {
     { id: 8, image: "https://i.ibb.co.com/sbwtHR5/protfoliyo-Image8.png" },
     { id: 9, image: "https://i.ibb.co.com/KqNtFf5/protfoliyo-Image9.png" }
   ];
+    useEffect(() => {
+          AOS.init({
+            duration: 1000, // Animation duration (in milliseconds)
+            offset: 200, // Offset from the top before the animation starts
+            easing: "ease-in-out", // Animation easing
+            delay: 100, // Delay before the animation starts
+          });
+        }, []);
   
   return (
     <div className='max-w-screen-lg mx-auto'>
-    <div>
+    <div className='px-4'>
     <div className='flex justify-center'>
         <button className="px-[8px] text-[#006BFF] font-semibold text-[14px] mt-[81px] py-[3px] rounded-full border-[1px] border-blue-500">
           {/* Button content */}
@@ -27,15 +37,15 @@ const protfoliyo = () => {
         </button>
       </div>
        <div>
-       <h2 className='text-center text-5xl font-semibold max-w-[600px] mt-[35px] mx-auto'>We don't “just” design,
+       <h2 className='text-center text-4xl md:text-5xl font-semibold max-w-[600px] mt-[35px] mx-auto'>We don't “just” design,
       we create impact</h2>
       <p className='text-[16px] max-w-[880px] mx-auto text-center py-[30px]'>Our aim is to make you more professional, strengthen your authority and set you apart from the competition.
       Take a look at some of our projects, carried out for customers all over the world, in a variety of sectors.</p>
        </div>
     </div>
-     <div className='grid grid-cols-3 justify-center gap-2 '>
+     <div className='grid grid-cols-1 px-4 md:grid-cols-2 lg:grid-cols-3 justify-center gap-2 '>
      {portfolio.map(item => <div key={item.id}>
-        <img className='border-2 border-gray-300 hover:border-gray-400 rounded-md' src={item.image} alt='image'></img>
+        <img data-aos="fade-up" className='border-2 border-gray-300 hover:border-gray-400 rounded-md' src={item.image} alt='image'></img>
       </div>)}
      </div>
     </div>

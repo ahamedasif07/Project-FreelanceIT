@@ -4,7 +4,7 @@ import Navbar from "./Components/NabVar/Navbar"
 
 const MainLayOut = () => {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen overflow-hidden ">
         <Navbar/>
         <Outlet/>
     </div>
