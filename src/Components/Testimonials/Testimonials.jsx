@@ -48,7 +48,7 @@ const Testimonials = () => {
       
       
   return (
-    <div className='max-w-screen-lg mx-auto'>
+    <div className='max-w-screen-lg mx-auto px-4'>
         <div>
                     <div className='flex justify-center'>
                         <button className="px-[8px] text-[#006BFF] font-semibold text-[14px] mt-[81px] py-[3px] rounded-full border-[1px] border-blue-500">
@@ -67,8 +67,8 @@ const Testimonials = () => {
        </div>
 
        {/* main section of testimonials */}
-       <div className='flex gap-7 py-4'>
-        <div className='w-1/3'>
+       <div className='flex md:flex-row flex-col gap-7 py-4'>
+        <div className='w-full md:w-1/3'>
          <h2 className='text-4xl font-bold leading-tight'>They trusted us and made <span className='text-[#006BFF]'>the right decision !</span> </h2>
          <h3 className='text-[16px] font-[500] mt-5'>At Wedooble, every project is a unique collaboration.
 We listen, understand and translate your ideas into timeless, impactful designs.
@@ -77,11 +77,12 @@ Our customers’ comments speak for themselves: speed, creativity and tailor-mad
 <h3 className='text-[16px] font-[800] mt-5'>Find out what they have to say and be inspired!.</h3>
          
         </div>
-        <div className='w-2/3'>
-      {/* revirw section start*/}
+         {/* revirw section start*/}
+        <div className='md:w-2/3 w-full'>
+     
         
       <div
-  className="flex gap-5 overflow-auto min-h-screen max-h-[500px]">
+  className="flex md:flex-row flex-col gap-5 overflow-auto min-h-screen max-h-[500px]">
   <div>
     {customerReviews.map((review) => (
       <ReviewCard key={review.id} review={review}></ReviewCard>
@@ -93,10 +94,9 @@ Our customers’ comments speak for themselves: speed, creativity and tailor-mad
     ))}
   </div>
 </div>
-
+ </div>
+ 
         {/* review section ends */}
-
-        </div>
        </div>
        {/* main section of testimonials */}
     </div>
